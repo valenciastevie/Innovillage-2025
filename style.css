@@ -1,0 +1,286 @@
+body {
+  background: #d9d9d9;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 20px;
+  text-align: left;
+  color: #b7c2dc;
+  padding-left: 70px;
+}
+
+h2 {
+  font-family: "Reem Kufi";
+  font-style: normal;
+  font-size: 32px;
+  line-height: 20px;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 72px;
+
+  color: #b7c2dc;
+}
+
+h3 {
+  font-family: "Reem Kufi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 10px;
+  text-align: left;
+  color: #eadf4d;
+  padding-left: 70px;
+}
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+  color: #333563;
+  margin-bottom: 2px;
+}
+
+h5 {
+  font-size: 30px;
+  color: #333563;
+  margin-left: 8%;
+  margin-top: 10%;
+}
+
+h6 {
+  text-align: center;
+  font-size: 15px;
+  color: #333563;
+}
+
+h7 {
+  display: flex;
+  align-items: center; /* vertical center */
+  font-size: 20px;
+  color: #333563;
+  padding-left: 1%;
+}
+
+h8 {
+  text-align: center;
+  font-style: normal;
+  font-size: 15px;
+  color: #333563;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-header-left {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: #333563;
+  border-radius: 30px;
+  overflow: hidden; /* agar radius rapih */
+}
+
+.top-header-right {
+  position: absolute;
+  top: 0;
+  right: 0; /* tempel kanan */
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 53, 99, 0.8);
+  border-radius: 30px 30px 30px 30px;
+  z-index: 2; /* layer paling atas */
+  text-align: center;
+}
+
+.foto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 700px; /* supaya full kanan kiri */
+  height: 100%; /* supaya full atas bawah */
+  background-image: url("Survey 1.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  z-index: 1; /* layer ke-2 */
+}
+
+.option-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.option-bg-kiri,
+.option-bg-tengah,
+.option-bg-kanan {
+  flex: 1; /* Semua kotak lebar fleksibel */
+  max-width: 360px; /* Biar tidak terlalu besar di layar besar */
+  height: 280px;
+  border-radius: 30px;
+}
+
+.option-bg-kiri {
+  background: #90bf91;
+}
+.option-bg-tengah {
+  background: #b7c2dc;
+}
+.option-bg-kanan {
+  background: #cbb1cf;
+}
+
+.circle {
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  background: #eadf4d;
+  margin-left: 250px;
+  margin-right: 10px;
+}
+
+.arrow {
+  margin-top: 35px;
+  margin-left: 8px;
+  position: absolute;
+  width: 60px; /* panjang batang panah */
+  height: 10px; /* tebal batang panah */
+  background-color: #333563; /* warna panah */
+  border-radius: 5px; /* membulatkan ujung batang panah */
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 30px; /* panjang kepala panah */
+  height: 10px; /* tebal kepala panah */
+  background-color: #333563;
+  border-radius: 5px;
+}
+
+.arrow::before {
+  transform: rotate(45deg);
+  top: -10px;
+}
+
+.arrow::after {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+.bottom-border {
+  width: 100%;
+  height: 50px;
+  background: rgba(51, 53, 99, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.outer-container{
+  margin: 20px;
+}
+
+.fill-container {
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.fill-container input {
+  margin-left: 15px;
+  width: auto;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333563;
+  border-radius: 30px; /* agar input mengikuti bentuk container */
+}
+
+.button-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+  align-items: center;
+  margin-top: 40px;
+}
+
+.back-button {
+  width: 100px;
+  height: 35px;
+  background: #b34a4c;
+  border-radius: 30px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  width: 100px;
+  height: 35px;
+  background: #90bf91;
+  border-radius: 30px;
+  display: flex;
+  margin-top: 50px;
+  margin-right: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-row a {
+  text-decoration: none;
+  color: #333563;
+}
+
+.box-container {
+  width: 95%;
+  background: #ffffff;
+  border-radius: 30px;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 200px 1fr; /* kiri = label, kanan = box */
+  row-gap: 15px;
+  align-items: center;
+}
+
+.box-container label {
+  font-size: 16px;
+  color: #333563;
+  font-weight: 600;
+}
+
+.box-content {
+  width: 100%;
+  height: 35px;
+  background: #B7C2DC;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px; /* agar teks tidak menempel kiri */
+  color: #333;
+}
+
