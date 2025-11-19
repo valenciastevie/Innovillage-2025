@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png" />
+
+    <!-- Google Fonts (TIDAK BOLEH diubah oleh JavaScript) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet yang AKAN diganti JS -->
+    <link rel="stylesheet" id="stylesheet" href="style.css" />
+
+    <title>GENTA - Posyandu Rajut Berseri 2 Desa Senggreng</title>
+
+    <script>
+      window.addEventListener("load", function () {
+        function setResponsiveStylesheet() {
+          const link = document.getElementById("stylesheet");
+          const isMobile = window.innerWidth <= 768;
+          link.href = isMobile ? "mobile.css" : "style.css";
+
+          console.log(`Screen width: ${window.innerWidth}px`);
+          console.log(`Applied stylesheet: ${link.href}`);
+        }
+
+        // Apply once on load
+        setResponsiveStylesheet();
+
+        // Re-check when resizing
+        window.addEventListener("resize", setResponsiveStylesheet);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="top-header-left">
+      <div class="foto"></div>
+
+      <div class="top-header-right">
+        <h2>Posyandu Rajut Berseri 2</h2>
+        <h1>DESA SENGGRENG</h1>
+        <h3>GENTA - INNOVILLAGE 2025</h3>
+        <a href="produk.html">
+          <div class="button-produk">
+            <h4>PRODUK KAMI</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+
+     <h4>Data Gizi Anak</h4>
+    <h6 style="font-size: 30px;">Belum ada data</h6>
+
+    <div class="back-button">
+      <a href="index.html">
+        <h7>Beranda</h7>
+      </a>
+    </div>
+
+    <div class="bottom-border">
+      <h6>copyright @ GENTA - Institut Teknologi Sepuluh Nopember</h6>
+    </div>
+  </body>
+</html>
